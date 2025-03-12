@@ -1,0 +1,98 @@
+img{
+    width: 300px; /* 幅を200pxに統一 */
+    height: 200px; /* 高さを150pxに統一 */
+    object-fit: cover; /* アスペクト比を維持してトリミング */
+    border-radius: 8px;
+}
+header {
+    padding-left: 3%;
+    color: blue;
+    text-shadow: 6px 3px 2px rgb(51, 99, 165);
+    font-size: 200%;
+    border: 10px solid blue;
+    font-weight:bold;
+}
+h1 {
+    padding-left: 3%;
+    text-shadow: 6px 3px 2px rgb(0, 0, 0);
+    text-align: left;
+}
+.txt-contents {
+    padding-right: 25%;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+}
+
+.lesson{
+    flex: 0 1 23%;  /* 幅を25%に設定 */
+    padding-bottom: 10%;
+    margin:0%;
+    z-index: 1;
+    
+}
+
+.anime {
+    text-align: left;
+    padding-top: 0%;
+    padding-left: 3%;
+    margin: 0%;
+    direction: ltr;
+    display: block;
+}
+
+.lessons {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3列を設定 */
+    grid-template-rows: auto auto; /* 2行を設定 */
+    gap: 0px;
+    padding: 0%;
+}
+
+
+
+.special{
+    object-position: center;  /* トリミングされる部分を中央に設定（必要に応じて調整） */
+    z-index: -1;
+    object-fit: cover;
+   
+}
+
+p {
+    z-index: 1;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .lessons-container {
+        grid-template-columns: 1fr; /* 小さい画面では1列にする */
+    }
+}
+
+
+.lessons-container{
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* 3列を設定 */
+grid-template-rows: auto auto; /* 2行を設定 */
+gap: 0px;
+padding: 0%;
+}
+
+/* lessons-container 配下の lesson のみ対象 */
+
+
+.lessons-container .lesson:nth-child(4),
+.lessons-container .lesson:nth-child(5) {
+    grid-column: span 1; /* 1列の幅にする */
+}
+body {
+    padding-left: 3%;
+    color: white;
+    background-size: cover;
+    background-position: center; /* 画像の中央を表示 */
+    background-repeat: no-repeat; /* 画像の繰り返しを無効化 */
+    background-attachment: fixed;
+
+    background-image: url(https://japan-design.jp/jd2/wp-content/uploads/2021/11/pencils-1280558_1920.jpg)
+}
