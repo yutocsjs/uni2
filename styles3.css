@@ -6,11 +6,12 @@ img{
 }
 header {
     padding-left: 3vw;
-    color: blue;
+    color: rgb(255, 255, 255);
     font-family: initial;
     text-shadow: 6px 3px 3px rgb(70, 120, 207);
     font-size:5vw;
-    border: 1vw solid blue;
+    border: 1vw solid rgba(0, 225, 255, 0.84);
+    opacity: 0.7;
     font-weight:bold;
 }
 h1 {
@@ -87,7 +88,7 @@ body {
     background-repeat: no-repeat; /* 画像の繰り返しを無効化 */
     background-attachment: fixed;
 
-    background-image: url(https://japan-design.jp/jd2/wp-content/uploads/2021/11/pencils-1280558_1920.jpg)
+    background-image: url(https://japan-design.jp/jd2/wp-content/uploads/2021/11/pencils-1280558_1920.jpg);
 }
 
 html, body {
